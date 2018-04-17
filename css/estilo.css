@@ -1,0 +1,262 @@
+/*negro     #211400    33,20,0
+blanco     #f7f1e8    247,241,232
+rojos     #f26612    242,102,18
+verdes     #33cc66    51,204,102
+azul     #6699cc    102,153,204
+amarillo #ffcc66    255,204,102
+BASE    #f39c11     243,156,17*/
+
+@font-face {
+    font-family: Monserrat;
+    src: url(font/Montserrat-Regular_0.ttf)
+}
+
+*{
+	margin: 0px;
+	padding:0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 2em;
+    margin-left: 3%;
+}
+
+/*EFECTOS*/
+.ver{ display: block; }
+.nover{ display: none; }
+
+/*IMAGEN Y BARRA*/
+.barra-titulo{
+	width: 100%;
+	background: rgba(255,255,255, .6);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	float: left;
+	height: 60px;
+	z-index: 99999999;
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,.3);
+	border-bottom: 1px solid #2f4a62;
+}
+
+/*==========ESTILOS DEL CONTENIDO=============*/
+
+.contenido{
+	/*background: rgb(255,239,219);*/
+	background-image: url(../image/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+	width: 100%;
+    height:100%;
+    position: absolute;
+}
+
+/*==========GRID==============================*/
+
+.uno,.dos,.tres,.cuatro, .espacio, .tresta, .cinco{
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.uno{ width: 99%; }
+.dos{ width: 49%; }
+.tres{ width: 32%; }
+.cuatro{ width: 24%; }
+.cinco{width: 18.7%; }
+.espacio{ width: 12%; }
+.tresta{ width: 32%;}
+
+.linea{
+	border-color: #fff !important;
+	box-shadow: 0px 0px 1px 0px;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+.break{
+	float: left;
+	width: 100%;
+	clear: both;
+	/*position: relative;*/
+	height: 2px;
+}
+
+/*FORMULARIOS======================================================*/
+
+input[type="text"],input[type="password"],input[type="email"],input[type="date"],input[type="number"]{
+    float: left;
+	height: 30px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px solid #a8abb2;
+	background: #ffffff;
+	box-sizing:border-box;
+	padding: 5px;
+	outline: none;
+}
+
+input[type="text"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="email"]:focus{
+	outline:0;
+	border: 1px solid #35ACA7;
+	background: #fff;
+}
+
+select{
+	float: left;
+	height: 30px;
+	font-size: 15px;
+	width: 177px;
+	border-radius: 2px;
+	border: 1px solid #a8abb2;
+	background: #ffffff;
+	box-sizing:border-box;
+	padding: 5px;
+	outline: none;
+}
+
+textarea{
+	float: left;
+	font-size: 15px;
+	border-radius: 2px;
+	border: 1px solid #a8abb2;
+	background: #ffffff;
+	box-sizing:border-box;
+	padding: 5px;
+	max-height: 60px;
+	min-height: 60px;
+	max-width: 100%;
+}
+
+textarea:focus{
+	outline:0;
+	border: 1px solid #35ACA7;
+	background: #fff;
+}
+
+textarea:invalid{
+	border: 1px solid #c81d30;
+}
+
+button{
+	height: 30px;
+    width: 75px;
+	font-size: 15px;
+	color: white;
+    background:#6699cc;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	/*text-shadow:0px -1px 0px rgba(0,0,0,.3);*/
+	/*box-shadow:	inset 0px -10px 20px rgba(0,0,0,.1);*/
+	transition:.2s all;
+}
+
+button:hover{
+	/*box-shadow:	inset 0px -10px 20px rgba(0,0,0,.2);*/
+	opacity: .9;
+}
+
+.menta{background: #FFCC33} /*PARA PODER USAR EL MODAL*/
+.claro{background: #A8ABB2; color:#3A4659 !important;text-shadow:0px 0px 0px rgba(0,0,0,.3) !important; }
+
+
+
+/*===================MODALES ==================*/
+
+#bg-negro{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: fixed;
+	background: rgba(0,0,0,.5);
+	z-index: 999999999;
+	transition:.1s all;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#modal{
+	float: left;
+	position: fixed;
+	background: #fff;
+	z-index: 999999999999;
+	border-radius: 2px;
+	top: 50%;
+	margin-top: -100px;
+	box-shadow: 0px 5px 20px 2px rgba(0,0,0,.5);
+	transition:.2s all;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform:scale(.9);
+	width: 200px;
+	left: 50%;
+	overflow: hidden;
+}
+
+#modal>h1{
+		text-align: center;
+		font-size: 20px;
+		font-weight: 400;
+		color: #34495e;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+#modal>p{
+		color: #6f7a8c;
+		width: 80%;
+		float: left;
+		margin-left: 10%;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+.chico{
+	width: 300px !important;
+	margin-left: -150px;
+}
+
+.verModal{
+	visibility: visible !important;
+	opacity: 1 !important;
+	-webkit-transform:scale(1) !important;
+}
+
+.grande{
+	width: 600px !important;
+	margin-left: -300px;
+}
+
+
+/*============================formularios edit ================*/
+.inicio{
+	width: 25%;
+	background: rgba(255,255,255, .6);
+	top: 25%;
+	left: 36%;
+	position: relative;
+	float: left;
+}
+
+input#usuario{
+    background-image: url(../image/user.png);
+    background-repeat: no-repeat;
+    background-size: 13% 95%;
+    padding-left: 13%;
+}
+
+input#pass{
+    background-image: url(../image/unlock.png);
+    background-repeat: no-repeat;
+    background-size: 13% 95%;
+    padding-left: 13%;
+}
