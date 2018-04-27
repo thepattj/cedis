@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Inicio de sesion - CEDIS</title>
+	<title>Ferreteria Eslabon 3</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<script src="js/jquery-3.3.1.js"></script> <!-- se agrego el jquery 14-2 -->
@@ -11,8 +11,19 @@
 
 <header>
 	<!-- DATOS DE LOGIN -->
-	<div class="barra-titulo">
-		<h1 style="color: rgba(104,160,26,1);"> Sistema Administrativo de CEDIS - Grupo Moo House </h1>
-		<!--<img style="width: 25%;" src="image/IMG_20161224_150946934.jpg">-->
+	<div id="barra-titulo">
+		<div class="titulo">
+			<h1>ESLABON 3</h1>
+			<!--<img style="width: 25%;" src="image/IMG_20161224_150946934.jpg">-->
+		</div>
+       <div class="menu nover" id="menu">
+           <ul>
+               <a href="almacen.php"><li>Almacen</li></a>
+               <a href="compra.php"><li>Compra</li></a>
+               <a href="pendiente.php"><li>Pendiente</li></a>
+               <a href="renta.php"><li>Renta</li></a>
+               <a href="venta.php"><li>Venta</li></a>
+           </ul>
+       </div>
     </div>
 </header>

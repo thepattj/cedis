@@ -6,10 +6,6 @@ azul     #6699cc    102,153,204
 amarillo #ffcc66    255,204,102
 BASE    #f39c11     243,156,17*/
 
-@font-face {
-    font-family: Monserrat;
-    src: url(font/Montserrat-Regular_0.ttf)
-}
 
 *{
 	margin: 0px;
@@ -27,9 +23,9 @@ h1{
 .nover{ display: none; }
 
 /*IMAGEN Y BARRA*/
-.barra-titulo{
+#barra-titulo{
 	width: 100%;
-	background: rgba(255,255,255, .6);
+	background:#f39c11;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -41,18 +37,93 @@ h1{
 	border-bottom: 1px solid #2f4a62;
 }
 
+.titulo{
+	float: left;
+	width: 20vw;
+	background:#f39c11;
+}
+
+.titulo>h1{
+    color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 60px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+/*===========MENU============================*/
+.menu{
+    width: 55%;
+	height: 100%;
+	float: right;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.menu>ul{
+    width: 100%;
+	height: 100%;
+	list-style: none;
+	float: right;
+}
+
+.menu>ul>a{
+    text-decoration: none;
+	color: WHITE;
+}
+
+.menu>ul>a>li{
+    position: relative;
+	float: left;
+	width: 16%;
+	height: 100%;
+	text-align: center;
+	line-height: 60px;
+}
+
+.menu>ul>a>li:hover{
+    /*color: #FD9C31;*/
+}
+
+.actual{
+    border-bottom: 4px solid #f26612;
+	box-sizing: border-box;
+}
+
 /*==========ESTILOS DEL CONTENIDO=============*/
 
 .contenido{
-	/*background: rgb(255,239,219);*/
-	background-image: url(../image/fondo.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	float: left;
-	width: 100%;
-    height:100%;
-    position: absolute;
+	background: rgb(255,239,219);
+	float: right;
+	width: 70%;
+    height: 80%;
+	border:1px solid rgba(255,239,219,1);
+	margin-right: 15%;
+	margin-top: 5%;
+	box-sizing:border-box;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,.1);
+	border-radius: 2px;
 }
+
+.tabla{
+    width: 80%;
+    float:left;
+    margin-left: 10%;
+    position: relative;
+}
+
+table{
+	width: 100%;
+	border: 2px solid #211400;
+	text-align: center;
+	border-collapse: collapse;
+	color: #211400;
+}
+th{ border: 2px solid #211400; }
+tr:hover {background-color: #f7f1e8}
 
 /*==========GRID==============================*/
 
@@ -234,29 +305,4 @@ button:hover{
 .grande{
 	width: 600px !important;
 	margin-left: -300px;
-}
-
-
-/*============================formularios edit ================*/
-.inicio{
-	width: 25%;
-	background: rgba(255,255,255, .6);
-	top: 25%;
-	left: 36%;
-	position: relative;
-	float: left;
-}
-
-input#usuario{
-    background-image: url(../image/user.png);
-    background-repeat: no-repeat;
-    background-size: 13% 95%;
-    padding-left: 13%;
-}
-
-input#pass{
-    background-image: url(../image/unlock.png);
-    background-repeat: no-repeat;
-    background-size: 13% 95%;
-    padding-left: 13%;
 }
