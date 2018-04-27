@@ -13,16 +13,16 @@
 	<!-- DATOS DE LOGIN -->
 	<div id="barra-titulo">
 		<div class="titulo">
-			<h1>ESLABON 3</h1>
+			<h1 style="color: rgba(108,174,68,1);">Moo House Group</h1>
 			<!--<img style="width: 25%;" src="image/IMG_20161224_150946934.jpg">-->
 		</div>
        <div class="menu nover" id="menu">
            <ul>
-               <a href="almacen.php"><li>Almacen</li></a>
-               <a href="compra.php"><li>Compra</li></a>
-               <a href="pendiente.php"><li>Pendiente</li></a>
-               <a href="renta.php"><li>Renta</li></a>
-               <a href="venta.php"><li>Venta</li></a>
+               <a style="color: rgba(108,174,68,1);" href="almacen.php"><li>Almacen</li></a>
+               <a style="color: rgba(108,174,68,1);" href="compra.php"><li>Compra</li></a>
+               <a style="color: rgba(108,174,68,1);" href="pendiente.php"><li>Pendiente</li></a>
+               <a style="color: rgba(108,174,68,1);" href="renta.php"><li>Renta</li></a>
+               <a style="color: rgba(108,174,68,1);" href="venta.php"><li>Venta</li></a>
            </ul>
        </div>
     </div>
