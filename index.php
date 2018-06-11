@@ -10,31 +10,31 @@ src="js/funciones.js"
   <div class="background">
     <div class="contenido" id="inicio">
 
-      <div class="uno"></div>
-      <div class="uno"></div>
-      <div class="uno"><h1 >INICIO DE SESION</h1></div>
-      <div class="uno"></div>
+      <div class="div1"></div>
+      <div class="div1"></div>
+      <div class="div1"><h1 >INICIO DE SESION</h1></div>
+      <div class="div1"></div>
         
-      <div class="tres"></div>
-      <div class="tres"><img src="image/candado2.png"></div>
-      <div class="tres"></div>
-      <div class="uno"></div>
+      <div class="div3"></div>
+      <div class="div3"><img src="image/candado2.png"></div>
+      <div class="div3"></div>
+      <div class="div1"></div>
         
         
-      <div class="tres"></div>
-      <div class="tres"><input id="usuario" type="text"></div>
-      <div class="tres"></div>
-      <div class="uno"></div>
+      <div class="div3"></div>
+      <div class="div3"><input id="usuario" type="text"></div>
+      <div class="div3"></div>
+      <div class="div1"></div>
 
-      <div class="uno"></div>
-      <div class="tres"></div>
-      <div class="tres"><input id="pass" type="password"></div>
-      <div class="tres"></div>
-      <div class="uno"></div>
+      <div class="div1"></div>
+      <div class="div3"></div>
+      <div class="div3"><input id="pass" type="password"></div>
+      <div class="div3"></div>
+      <div class="div1"></div>
 
-      <div class="uno"></div>
-      <div class="tres"></div>
-      <div class="tres">
+      <div class="div1"></div>
+      <div class="div3"></div>
+      <div class="div3">
         <select>
           <option>Compras - CEDIS</option>
           <option>Ventas - CEDIS</option>
@@ -43,13 +43,13 @@ src="js/funciones.js"
           <option>Compras - Sucursal</option>          
         </select>
       </div>
-      <div class="tres"></div>
-      <div class="uno"></div>
+      <div class="div3"></div>
+      <div class="div1"></div>
         
-      <div class="tres"></div>
-      <div class="tres"><button id="entrar">Aceptar</button></div>
-      <div class="tres"></div>
-      <div class="uno"></div>
+      <div class="div3"></div>
+      <div class="div3"><button id="entrar">Aceptar</button></div>
+      <div class="div3"></div>
+      <div class="div1"></div>
     </div>
     <div class="contenido nover" id="imagen">
         <img src="image/">

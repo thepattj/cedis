@@ -149,7 +149,7 @@ tr:hover {background-color: #f7f1e8}
 
 /*==========GRID==============================*/
 
-.uno,.dos,.tres,.cuatro, .espacio, .tresta, .cinco{
+.div1,.div2,.div3,.div4, .espacio, .div3ta, .div5{
 	float: left;
 	margin-right: 1%;
 	margin-bottom: 10px;
@@ -160,13 +160,13 @@ tr:hover {background-color: #f7f1e8}
 
 }
 
-.uno{ width: 99%; }
-.dos{ width: 49%; }
-.tres{ width: 32%; }
-.cuatro{ width: 24%; }
-.cinco{width: 18.7%; }
+.div1{ width: 99%; }
+.div2{ width: 49%; }
+.div3{ width: 32%; }
+.div4{ width: 24%; }
+.div5{width: 18.7%; }
 .espacio{ width: 12%; }
-.tresta{ width: 32%;}
+.div3ta{ width: 32%;}
 
 .linea{
 	border-color: #fff !important;
@@ -342,4 +342,18 @@ input#contra{
 .grande{
 	width: 600px !important;
 	margin-left: -300px;
+}
+
+
+
+
+
+
+/*===========================REPORTE PHP===========================*/
+
+.result{
+    width: 80%;
+    float:left;
+    margin-left: 10%;
+    position: relative;
 }
