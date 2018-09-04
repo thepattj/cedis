@@ -357,3 +357,8 @@ input#contra{
     margin-left: 10%;
     position: relative;
 }
+
+.lbtn{
+	width: 16px;
+	height: 16px;
+}

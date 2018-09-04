@@ -67,8 +67,99 @@ $(function(){
       }
      
   });
-    
-    
+/*========BVG DE QUINTANA ==============*/    
+  $('#mhbqa').click(function(){
+      var fechar = $("#freporte").val(); 
+      url = 'phpreport/BVG-MHBQA.php?fecha='+fechar;
+      window.open(url, '_blank');
+      return false;
+  });
+/*========BVG DE UBIKA ==============*/
+  $('#mhubk').click(function(){
+      var fechar = $("#freporte").val(); 
+      url = 'phpreport/BVG-MHUBK.php?fecha='+fechar;
+      window.open(url, '_blank');
+      return false;
+  });
+/*========BVG DE UPTOWN ==============*/
+  $('#mhupt').click(function(){
+      var fechar = $("#freporte").val(); 
+      url = 'phpreport/BVG-MHUPT.php?fecha='+fechar;
+      window.open(url, '_blank');
+      return false;
+  });
+/*========BVG DE BRIOCHE BISTRO ==============*/
+  $('#brubk').click(function(){
+      var fechar = $("#freporte").val(); 
+      url = 'phpreport/BVG-BRUBK.php?fecha='+fechar;
+      window.open(url, '_blank');
+      return false;
+  });
+/*========BVG DE BAKERY ==============*/
+  $('#bkbqa').click(function(){
+    var fechar = $("#freporte").val(); 
+    url = 'phpreport/BVG-BKBQA.php?fecha='+fechar;
+    window.open(url, '_blank');
+    return false;
+  });
+/*====== VENTAS DEL DIA ACTUAL =======*/
+  $('#ventas').click(function(){
+      url = 'phpreport/detalleventas.php';
+      window.open(url, '_blank');
+      return false;
+  });
+/*========= VENTAS DE LA SEMANA =======*/
+  $('#ventassem').click(function(){
+    var fechar = $("#freporte").val(); 
+    url = 'phpreport/detalleventasem.php?fecha='+fechar;
+    window.open(url, '_blank');
+    return false;
+  });
+/*========= VENTAS DEL MES ==========*/
+  $('#ventasmes').click(function(){
+    var fechar = $("#freporte").val(); 
+    url = 'phpreport/detalleventasmes.php?fecha='+fechar;
+    window.open(url, '_blank');
+    return false;
+  });
+
+  $('#prmhbqa').click(function(){
+      url = 'phpreport/prodmhbqa.php';
+      window.open(url, '_blank');
+      return false;
+  });
+
+  $('#prmhubk').click(function(){
+      url = 'phpreport/prodmhubk.php';
+      window.open(url, '_blank');
+      return false;
+      alert('prod. moo house');
+  });
+
+  $('#prmhupt').click(function(){
+      url = 'phpreport/prodmhupt.php';
+      window.open(url, '_blank');
+      return false;
+  });
+
+  $('#panbrubk').click(function(){
+      url = 'phpreport/prodpanbrubk.php';
+      window.open(url, '_blank');
+      return false;
+  });
+
+   $('#panbralm').click(function(){
+      url = 'phpreport/prodpanbralm.php';
+      window.open(url, '_blank');
+      return false;
+  });
+
+  $('#panbk').click(function(){
+      url = 'phpreport/prodpanbk.php';
+      window.open(url, '_blank');
+      return false;
+  });
+
 });
 
 
